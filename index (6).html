@@ -1,0 +1,637 @@
+<!doctype html><html lang="is"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sexvember 2026 — Spilakvöld</title><style>
+:root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#431a2a 0%,#17121a 50%,#100e14 100%);color:#f8edf0;min-height:100vh}.wrap{max-width:960px;margin:auto;padding:30px 18px 70px}header{text-align:center;margin:22px 0 36px}.eyebrow{color:#d7b57a;letter-spacing:.24em;font-size:.75rem;font-weight:700}h1{font-family:Georgia,serif;font-size:clamp(2.8rem,9vw,5rem);margin:10px 0;color:#f4d5df}h2{font-family:Georgia,serif;font-size:1.7rem;margin:0 0 10px}p{color:#cdbdc5;line-height:1.55}.lead{max-width:580px;margin:0 auto}.modes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.mode,.panel,.playing-card{border:1px solid #745264;background:linear-gradient(155deg,#33222e,#211923);border-radius:18px;padding:22px}.mode{cursor:pointer;text-align:left;color:inherit;min-height:250px;transition:.2s}.mode:hover,.mode:focus-visible{border-color:#e6bd7c;transform:translateY(-2px)}.mode.selected{border:2px solid #e6bd7c;background:linear-gradient(145deg,#4b2838,#231b25)}.mode .symbol{font-size:2rem;color:#edca8e}.mode h3{margin:14px 0 8px}.mode p{font-size:.9rem;margin:0}.pill{display:inline-block;color:#edca8e;border:1px solid #8b6b51;border-radius:50px;padding:4px 10px;font-size:.7rem;margin-top:14px}.panel{margin-top:22px}.choices{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.check{display:flex;align-items:flex-start;gap:10px;padding:12px;background:#261d27;border-radius:10px}.check input{accent-color:#d6a968;width:18px;height:18px;margin-top:3px}.check span{font-size:.9rem}.check small{display:block;color:#aa9aa4;margin-top:4px}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}button{font:inherit;cursor:pointer}button.primary{background:#e5bd7b;color:#261a20;border:0;border-radius:10px;padding:14px 24px;font-weight:750}button.secondary{background:transparent;color:#f4e7ee;border:1px solid #876779;border-radius:10px;padding:13px 20px}button:disabled{opacity:.5;cursor:not-allowed}.muted{font-size:.84rem;color:#ae9ea8}.hidden{display:none!important}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:22px 0}.playing-card{min-height:250px;display:flex;flex-direction:column;justify-content:center;text-align:center;align-items:center;border:2px solid #a78062;box-shadow:0 12px 28px #0004}.playing-card:nth-child(2){background:linear-gradient(145deg,#5a2335,#271923)}.playing-card:nth-child(3){background:linear-gradient(145deg,#442b57,#251c2d)}.cardicon{font-size:2.3rem;color:#eac98d}.cardtag{letter-spacing:.15em;color:#eac98d;font-size:.75rem;margin:16px 0}.cardtext{font-size:1.2rem;font-weight:650}.carddetail{font-size:.86rem;color:#e4ced7;line-height:1.45;margin-top:13px}.cardnum{color:#baa5ae;font-size:.8rem;margin-top:14px}.notice{border-left:3px solid #d4ab73;padding:10px 15px;background:#271f28;margin-top:18px;color:#d7c8d0;font-size:.86rem;line-height:1.5}.status{min-height:1.5em;color:#e5bd7b;font-size:.85rem;margin-top:12px}footer{text-align:center;margin-top:32px;color:#9c8795;font-size:.8rem}@media(max-width:650px){.modes{grid-template-columns:1fr}.mode{min-height:0}.choices{grid-template-columns:1fr}.cards{gap:8px}.playing-card{padding:10px 7px;min-height:205px}.cardtext{font-size:.94rem}.cardtag{font-size:.63rem}.cardicon{font-size:1.7rem}.wrap{padding:20px 12px 50px}}
+ .steps{padding-left:25px;line-height:1.65}.steps li{margin:14px 0;padding-left:5px}.steps strong{color:#f4c785}.steps small{display:block;color:#d6c6cd;margin-top:4px} 
+.wizard{margin-top:20px;border:1px solid #9b6d7d;background:#261a26;border-radius:20px;padding:22px}.progress{height:7px;background:#493341;border-radius:9px;overflow:hidden;margin:14px 0 22px}.progress>div{height:100%;background:#e5bd7b;transition:width .2s}.wizard h3{font-size:1.5rem;margin:8px 0}.wizard p{font-size:1.08rem;color:#f0dfe6}.step-count{color:#e5bd7b;font-size:.82rem;letter-spacing:.1em}.diagram{display:flex;gap:12px;align-items:center;background:#1b1620;border-radius:12px;padding:12px;margin:14px 0}.diagram svg{flex:0 0 105px;width:105px;height:85px}.diagram span{font-size:.9rem;color:#d6c6cd}.mini-guide{padding:12px 15px;border-left:3px solid #e5bd7b;background:#322532;margin-top:12px;border-radius:6px;color:#f0dfe6}.wizard-nav{display:flex;justify-content:space-between;gap:10px;margin-top:20px}.wizard-nav button{flex:1}.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));gap:12px;margin-top:18px}.costume{background:#241a25;border:1px solid #674657;border-radius:12px;padding:12px;text-align:center}.costume strong{display:block;margin:8px 0}.costume small{color:#cdbdc5;line-height:1.45;display:block}.guide-list{margin:10px 0;padding-left:20px;line-height:1.8}.guide-list li{margin-bottom:8px}@media(max-width:650px){.wizard{padding:16px}.diagram{align-items:flex-start}}
+ .equipment{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}.equipment article{padding:14px;border:1px solid #735366;border-radius:12px;background:#221924}.equipment svg{height:95px;width:100%;display:block}.equipment strong{display:block;color:#f4d6df;margin:8px 0}.equipment small{color:#d1c0c8;line-height:1.5;display:block}@media(max-width:650px){.equipment{grid-template-columns:repeat(2,minmax(0,1fr))}} .wheel-box{text-align:center;padding:15px 0}.happy-wheel{width:min(290px,75vw);height:min(290px,75vw);margin:10px auto 24px;border-radius:50%;border:7px solid #e5bd7b;position:relative;background:conic-gradient(#6b2641 0 25%,#33223e 25% 50%,#9b4960 50% 75%,#48304d 75% 100%);box-shadow:0 8px 24px #0008;transition:transform 3.5s cubic-bezier(.13,.75,.13,1)}.happy-wheel span{position:absolute;display:block;font-size:.83rem;font-weight:700;color:#fff;text-shadow:0 1px 3px #000;max-width:90px}.happy-wheel span:nth-child(1){top:23%;right:9%}.happy-wheel span:nth-child(2){bottom:22%;right:7%}.happy-wheel span:nth-child(3){bottom:23%;left:10%}.happy-wheel span:nth-child(4){top:23%;left:9%}.wheel-arrow{color:#e5bd7b;font-size:1.8rem;line-height:1}#happyResult{font-weight:700;color:#f4d5df}
+ .toolrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+ .history{margin-top:8px;line-height:1.6}
+ .history li{margin:8px 0}
+ button.tiny{background:transparent;color:#e5bd7b;border:1px solid #6f5265;border-radius:8px;padding:5px 9px;font-size:.75rem;line-height:1.1}
+ button.tiny:hover{border-color:#e5bd7b}
+ .badge{display:inline-block;background:#3a2733;border:1px solid #8b6b51;color:#edca8e;border-radius:50px;padding:3px 10px;font-size:.7rem;letter-spacing:.08em;margin:6px 6px 0 0}
+.todgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:16px}
+.todcard{border:1px solid #a78062;background:linear-gradient(150deg,#3d2130,#221a26);border-radius:14px;padding:16px}
+.todtag{color:#edca8e;letter-spacing:.12em;font-size:.72rem;font-weight:700}
+.todcard p{color:#f3e2ea;font-size:1rem;line-height:1.5;margin:10px 0 14px}
+.todcard button{width:100%}
+@media(max-width:650px){.todgrid{grid-template-columns:1fr}}
+ .freshfoot{margin-top:22px;padding-top:14px;border-top:1px dashed #6f5265}
+@media print{
+ body{background:#fff!important;color:#000!important}
+ .wrap{max-width:none;padding:0}
+ #welcome,#game .actions,.wizard,.wheel-box,.toolrow,#positionChoices a,.badge{display:none!important}
+ #plan{display:block!important;border:0;background:#fff;page-break-inside:avoid}
+ #plan > summary{display:none}
+ #plan h2,#plan strong{color:#000!important}
+ #plan h2{font-size:18pt;margin:0 0 6pt}
+ #plan p,#plan small,#positionIntro,.steps,.steps small{color:#000!important;font-size:11pt}
+ .steps{line-height:1.5}
+ #positionGuide{border:0;background:#fff;padding:0;page-break-inside:avoid}
+ #positionGuide h2{color:#000!important}
+ .check{background:#fff!important;border:1px solid #bbb;page-break-inside:avoid}
+ .hideprint{display:none!important}
+ h1{color:#000!important;font-size:22pt}
+ .eyebrow{color:#333!important}
+ header p{color:#333!important;font-size:11pt}
+ footer{color:#333!important}
+}
+</style></head><body><main class="wrap"><header><div class="eyebrow">12 KVÖLD · 3 SPILASTOKKAR</div><h1>SEXVEMBER</h1><p class="lead">Veljið hvernig kvöldið á að vera. Síðan dragi þið þrjú spil sem mynda verkefni kvöldsins.</p></header>
+<section id="welcome"><h2>1. Veljið upplifun</h2><div class="modes" id="modes"><button class="mode" data-mode="classic"><div class="symbol">◇</div><h3>Classic Sexvember</h3><p>Undirföt, búningar, kynlífsstellingar, leyniverkefni, rómantík og hjálpartæki. Fyrir fjölbreytt og óvænt kvöld.</p><span class="pill">Léttara þema</span></button><button class="mode" data-mode="bdsm"><div class="symbol">♛</div><h3>Fifty Shades of Grey</h3><p>Dom/sub-hlutverk, kynlífsstellingar, fyrirfram samþykktar reglur, augnbindi, handjárn og bindingar.</p><span class="pill">Vald og eftirvænting</span></button><button class="mode" data-mode="full"><div class="symbol">✦</div><h3>Full Experience</h3><p>Allt blandað saman. Búningar, stellingar, valdaskipti, hjálpartæki og valfrjáls sérþemu.</p><span class="pill">Mesta fjölbreytnin</span></button></div>
+<div class="panel"><h2>2. Veljið hvað má koma upp</h2><p>Hakið aðeins við það sem þið hafið bæði samþykkt. Það má breyta valinu síðar.</p><div class="choices" id="options"></div>
+<details class="panel" id="freshPanel"><summary><strong>Endurtekningar – hvað má koma upp aftur</strong></summary>
+<p class="muted">Kerfið munar á öllu sem hefur komið upp. Spil, sem hafa komið upp á síðustu <strong id="freshCount">12</strong> kvöldum, eru ekki dregin aftur fyrr en sagan hreinsast – nema þið hreinsrjið söguna eða slökkvið á þessu.</p>
+<label class="check" style="margin-top:12px"><input type="checkbox" id="avoidToggle" checked><span><strong>Forðast endurtekningar</strong><small>Slökktu á þessu ef þið viljið leyfa öll spil aftur.</small></span></label>
+<div class="toolrow"><button class="secondary" id="showHistory" type="button">Skoða söguna (0 spil)</button><button class="secondary" id="clearHistory" type="button">Hreinsa söguna</button></div>
+<ol id="history" class="history hidden"></ol>
+<div id="historyFoot" class="freshfoot hidden"><button id="undoLast" class="secondary" type="button">Afturkalla síðasta kvöld</button><span id="undoNote" class="muted"></span></div>
+<p class="muted" style="margin-top:12px">Sagan er geymd í vafranum þínum (localStorage) og fylgir þessari síðu. Hún er ekki send neitt.</p>
+</details><details class="panel"><summary><strong>Skoða 10 búninga með myndrænum vísbendingum</strong></summary><div id="costumeGallery" class="gallery"></div></details><details class="panel"><summary><strong>Skoða hjálpartæki og búnað – með skýringarmyndum</strong></summary><div class="equipment" id="equipmentGallery"></div></details><div class="actions"><button id="start" class="primary" disabled>Byrja Sexvember →</button></div><div class="notice">Öll verkefni eru valfrjáls. Stöðvunarorð og skýr mörk gilda alltaf. Bindingar þurfa að vera auðleysanlegar; forðist hálsbindingar og þrýsting á taugar. Anal-þema þarf sérstakt samþykki og viðeigandi örugg hjálpartæki.</div></div></section>
+<section id="game" class="hidden"><div class="actions" style="margin-top:0"><button id="back" class="secondary">← Breyta vali</button></div><h2 style="margin-top:25px">Dragðu þrjú spil</h2><p id="modeDesc"></p><div class="cards"><div class="playing-card"><div class="cardicon">◇</div><div class="cardtag">STOKKUR A · KLÆÐNAÐUR / STELLINGAR</div><div class="cardtext" id="a">Óopnað spil</div><div class="carddetail" id="adetail"></div><div class="cardnum" id="an"></div></div><div class="playing-card"><div class="cardicon">♛</div><div class="cardtag">STOKKUR B · REGLUR / STELLINGAR</div><div class="cardtext" id="b">Óopnað spil</div><div class="carddetail" id="bdetail"></div><div class="cardnum" id="bn"></div></div><div class="playing-card"><div class="cardicon">✦</div><div class="cardtag">STOKKUR C · ÞEMA / STELLINGAR</div><div class="cardtext" id="c">Óopnað spil</div><div class="carddetail" id="cdetail"></div><div class="cardnum" id="cn"></div></div></div><div id="wizard" class="wizard hidden"><div class="step-count" id="stepCount"></div><div class="progress"><div id="progressBar"></div></div><h3 id="stepTitle"></h3><div id="stepBody"></div><div class="wizard-nav"><button class="secondary" id="prevStep">← Til baka</button><button class="primary" id="nextStep">Næsta skref →</button></div></div><details id="plan" class="panel hidden"><summary><strong>Sjá öll skrefin í einu</strong></summary><h2>Verkefni kvöldsins – skref fyrir skref</h2><p>Fylgið skrefunum í réttri röð. Allt er valfrjálst.</p><ol id="steps" class="steps"></ol></details><div id="setChoice" class="hidden"></div>
+<div id="ruleBox" class="hidden"></div>
+<div id="extraChoice" class="todgrid hidden"></div>
+<div id="todCards" class="todgrid"></div><p class="muted" id="todStatus"></p>
+<div id="positionGuide" class="panel hidden"><h2>Tvær stellingar kvöldsins</h2><p id="positionIntro"></p><div class="choices" id="positionChoices"></div><p class="muted">Stellingarnar eru valdar af síðunni við hvern drátt. Hættið eða breytið ef þær valda óþægindum.</p></div><div class="actions hideprint"><button id="draw" class="primary">⤨ Draga þrjú spil</button><button id="copy" class="secondary" disabled>Afrita verkefni</button><button id="printPlan" class="secondary" type="button" disabled>🖨 Prenta verkefnablað</button></div><div class="status" id="status" aria-live="polite"></div><div class="notice">Ef spil hentar ekki, dragið aftur. Tilviljun velur aldrei fyrir ykkur hvað þið samþykkið.</div></section><footer>SEXVEMBER 2026 · Einkaleikur fyrir tvo</footer></main>
+<script>
+const configs={classic:{label:'Classic Sexvember',enabled:['outfits','toys','surprise','sensory','forleikur','positions','oral','kink'],description:'Búningar, undirföt, stellingar, óvænt verkefni og hjálpartæki.'},bdsm:{label:'Fifty Shades of Grey',enabled:['outfits','toys','surprise','sensory','forleikur','restraints','power','positions','oral','kink'],description:'Dom/sub-reglur, stellingar, samþykktar bindingar og skynjunarverkefni.'},full:{label:'Full Experience',enabled:['outfits','toys','surprise','sensory','forleikur','restraints','power','anal','positions','oral','kink'],description:'Blanda af öllum samþykktum þemum, þar á meðal stellingum.'}};
+const opts=[['outfits','Búningar og undirföt','Dress code, búningaval, geirvörtuklemmur og leynipakkar'],['toys','Hjálpartæki','Val úr samþykktum hjálpartækjum'],['forleikur','Forleikur','Forleikur, nánd og upphitun – 24 spil í sérstökum flokki'],['surprise','Óvænt verkefni','Leynikassar, joker og hlutverkaleikir'],['sensory','Skynfæri','Augnbindi, tónlist, áferð og nudd'],['restraints','Handjárn og bindingar','Aðeins öruggar og auðleysanlegar bindingar'],['power','Dom/sub-reglur','Samþykkt hlutverk, stjórn og val'],['anal','Anal-þema','Aðeins með sérstöku samþykki fyrir hvert skipti'],['positions','Kynlífsstellingar','Tvær af 25 nafngreindum stellingum með leitartenglum'],['oral','Munnmök','Valfrjálst þema; dregið er hvort konan eða karlinn sé þiggjandi'],['kink','Kink og fantasíur','Grímur, hlutverk, leynireglur og djörf Truth or Dare'],['media','Fullorðinsefni','Valfrjálst myndskeið sem innblástur fyrir búninga og hlutverk'],['happy','Happy ending','Valfrjálst snúningshjól í lok verkefnisins']];
+const A=[
+['Svart blúndusett','outfits','Svartur blúndutoppur og samstæðar nærbuxur; bætið við satínslopp.'],
+['Rautt satín','outfits','Rauður satínsloppur með samstæðum undirfötum og einföldum skartgrip.'],
+['Korsilett og sokkabönd','outfits','Korsilett með stillanlegri reimingu, sokkabönd og háa sokka.'],
+['Svartur body','outfits','Einfaldur svartur body með opnum skyrtukjól eða slopp yfir.'],
+['Grímuball','outfits','Augngríma, dökkur fatnaður, glæsilegir hanskar og gylltir fylgihlutir.'],
+['Hótelglæsileiki','outfits','Silkisloppur, samstæð undirföt og inniskór; undirbúið herbergið eins og hótelsvítu.'],
+['Leður-útlit','outfits','Svart gervileður, breitt belti og há stígvél; forðist þröngar óþægilegar ólar.'],
+['Vintage glamúr','outfits','Retro undirföt, háir sokkar og kimono-sloppur í gömlum Hollywood-stíl.'],
+['Hvítur og gylltur','outfits','Hvítur satínfatnaður með gylltum fylgihlutum og ljósum slopp.'],
+['Leyndardómsfullur búningur','outfits','Veljið fyrirfram eitt af þremur settum; pakkið því inn og opnið við upphaf kvöldsins.'],
+['Frjálst val','always','Veljið klæðnað sem hentar kvöldinu.'],
+['Þægilegur klæðnaður fyrir stellingar','positions','Veljið mjúkan fatnað og hafið púða tiltæka.'],
+ ['Tækjaval kvöldsins','toys','Veljið eitt tæki úr safninu, hlaðið það og prófið styrkstig í hendi áður en kvöldið byrjar.'],
+ ['Tvö tæki, tvö hlutverk','toys','Annar stýrir tækinu, hinn segir til um styrk og stað. Skiptist á eftir fyrstu lotu.'],
+ ['Nýtt tæki sem þið hafið ekki prófað','toys','Veljið ónotað tæki úr safninu, lesið leiðbeiningar framleiðanda og prófið varlega.'],
+ ['Titrari í nærbuxunum','toys','Setjið litla titrara í nærbuxurnar og látið hinn stýra styrknum úr fjarska.'],
+ ['Olía, nuddið og forleikur','forleikur','Takið fram olíu og nuddstein. Nuddið í að minnsta kosti 15 mínútur áður en farið er lengra.'],
+ ['Forleikur í 20 mínútum','forleikur','Klukka stillt á 20 mínútur. Sá sem stýrir velur hvað gerist og hvenær lengra má fara.'],
+ ['Upphitun með augnbindi','forleikur','Bindið fyrir augun og notið aðeins hendur og andardrátt í tíu mínútur.']];
+const gallery=document.getElementById('costumeGallery');A.slice(0,10).forEach(([name,tag,detail],i)=>{const card=document.createElement('article');card.className='costume';const hues=['#bda0b9','#bf4e65','#b8a16e','#8d879d','#d0ad75'];card.innerHTML=`<svg viewBox="0 0 130 145" role="img" aria-label="Stílfærð teikning af búningi" style="width:100%;height:135px"><path d="M47 20Q65 35 83 20L104 44 87 58 85 122H45L43 58 26 44Z" fill="${hues[i%5]}" opacity=".85" stroke="#f0d4c7" stroke-width="2"/><path d="M48 52H82M48 75H82M52 98H78" stroke="#30202a" stroke-width="2" stroke-dasharray="4 4"/></svg><strong>${name}</strong><small>${detail}</small>`;gallery.append(card)});
+const gear=[
+ ['Augnbindi','Mjúkt augnbindi sem hægt er að fjarlægja í einni hreyfingu.','mask'],
+ ['Bólstraðar úlnliðsólar','Breiðar ólar með hraðlosun; prófið losun áður en byrjað er.','cuff'],
+ ['Undirrúmskerfi','Sérhannaðar festingar undir dýnu, með auðveldri losun.','bed'],
+ ['Titringsstafur','Hlaðið tækið og prófið mismunandi stillingar í hendi.','wand'],
+ ['Lítill titrari','Veljið tæki með skýrum stjórntökkum og auðveldri hreinsun.','vibe'],
+ ['Nuddolía / sleipiefni','Skoðið hvort varan samrýmist húð, smokkum og búnaði.','bottle'],
+ ['Geirvörtuklemmur','Stillanlegar klemmur; hættið við dofa eða verki.','clip'],
+ ['Anal-tappi með breiðum stoppara','Notið aðeins tæki sérstaklega ætluð endaþarmi; nóg sleipiefni og auðveld fjarlæging.','vibe'],['Anal-perlur með öruggum stoppara','Fylgið leiðbeiningum framleiðanda og notið viðeigandi sleipiefni.','vibe'],['Ytri nuddari','Ytri örvun er líka möguleiki í anal-þema; engin innsetning nauðsynleg.','wand'],['Paratitrari','Tæki sem hentar tveimur; kynnið ykkur stýringar og þrif.','vibe'],['Fjarstýrður titrari','Athugið hleðslu, drægni og hvernig slökkva má strax.','vibe'],['Leikjaspjöld','Skrifið spurningar, verkefni og hlutverk á aðskilin spjöld.','cards'],
+ ['Stór titringsstafur (varablindur)','Öflugur stafur með nokkrum styrkstigum; byrjið lágt og aukið hægt.','wand'],
+ ['G-punktur stafur','Beygður stafur sem er notaður með léttum þrýstingi inn á við.','wand'],
+ ['Kanínu-titrari','Lítill titrari með eyrum sem situr á utanverðum svæðum; prófið í hendi fyrst.','vibe'],
+ ['Fjarlægðarstýrður titrari í nærbuxum','Hann fer í nærbuxurnar og er stýrður úr fjarska; gott fyrir útivist eða leiki.','vibe'],
+ ['Paratitrari með tveimur hlutum','Tvö samtengd tæki sem titra saman; kynnið ykkur stýringar og hleðslu.','vibe'],
+ ['Titringsstafur með þrýstingi á klitoris','Stafur með loftþrýstingi án beinnar snertingar; byrjið á lægsta stigi.','wand'],
+ ['Titrandi hringur fyrir getnaðarlim','Hringur sem situr við rótina eða á milli; athugið hringstærð og þægindi.','cuff'],
+ ['Strap-on með stillanlegum ólum','Sérhannað beltissett með breiðum ólum; stillið áður en notkun hefst.','cuff'],
+ ['Ólar fyrir læri og rass','Breiðar ólar sem halda tækjum á sínum stað; prófið losun fyrst.','cuff'],
+ ['Titringsstafur með hlutfallstýringu','Stafur sem titrar í takt við tónlist; prófið út frá tónlist kvöldsins.','wand'],
+ ['Sleipiefni í skammtara','Gefa sig út fyrir að vera ný; skoðið samhæfni við efni tækjanna.','bottle'],
+ ['Anal-tappi fyrir byrjendur','Lítill tappi með breiðum stoppara og sérstöku sleipiefni; hættið við verki.','vibe'],
+ ['Anal-perlur (endurnýtanlegar)','Perlur með öruggum stoppara; fjarlægið hægt og varlega.','vibe'],
+ ['Anal-titrari með fjarlægri stýringu','Titrari með breiðum grunn sem er ekki hægt að missa inn; prófið stýringar fyrst.','vibe'],
+ ['Klitoris-súgstafur','Súgur án snertingar; byrjið á lægsta stigi og fylgist með viðbrögðum.','wand'],
+ ['Hálsband og handjárn úr mjúku efni','Létt útgáfa af böndum; allt á að losna við eitt grip.','clip'],
+ ['Titringsstafur í tveimur hlutum fyrir tvo','Hann er með tveimur endum; gott fyrir samstillingu.','wand'],
+ ['Olierúlla og nuddsteinn','Fyrir langa forleik; hitið olíuna aðeins í höndunum.','bottle'],
+ ['Leikföng með sögu (3 stig)','Þrjú tæki í þremur styrkleikum; byrjið á því lægsta og aukið.','vibe'],
+ ['Rúmföt og handklæði undir','Hafið handklæði undir og eftir; allt sem er blautt skal úr leið.','bed']
+];
+const gearSvg=(kind)=>{const shape={mask:'<path d="M12 48Q60 12 108 48L98 70Q60 86 22 70Z"/><path d="M20 55q17-14 30 0m10 0q13-14 30 0"/>',cuff:'<rect x="20" y="24" width="28" height="60" rx="12"/><rect x="72" y="24" width="28" height="60" rx="12"/><path d="M48 53h24"/>',bed:'<rect x="13" y="46" width="94" height="34" rx="3"/><path d="M13 80v10m94-10v10M13 46V35h32v11M26 46v-12m68 12v-12"/>',wand:'<rect x="51" y="35" width="18" height="55" rx="8"/><circle cx="60" cy="23" r="17"/><circle cx="60" cy="59" r="2"/>',vibe:'<rect x="41" y="24" width="38" height="64" rx="19"/><circle cx="60" cy="65" r="5"/><path d="M52 40h16"/>',bottle:'<rect x="42" y="31" width="36" height="58" rx="6"/><path d="M51 31V18h18v13M46 57h28"/>',clip:'<path d="M30 32l20 34m40-34L70 66M50 66h20"/><circle cx="30" cy="30" r="7"/><circle cx="90" cy="30" r="7"/>',cards:'<rect x="24" y="21" width="54" height="65" rx="4"/><path d="M43 13h53v65M39 43h24m-24 14h24"/>'}[kind];return `<svg viewBox="0 0 120 100" role="img" aria-label="Teikning af búnaði" fill="none" stroke="#eac98d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">${shape}</svg>`};
+const gearHost=document.getElementById('equipmentGallery');gear.forEach(([name,detail,kind])=>{const card=document.createElement('article');card.innerHTML=gearSvg(kind);const title=document.createElement('strong');title.textContent=name;const desc=document.createElement('small');desc.textContent=detail;card.append(title,desc);gearHost.append(card)});
+const B=[
+['Þú skipuleggur kvöldið','surprise','Þú velur stað, tónlist og röð samþykktra verkefna. Hún fær að vita áætlunina áður en þið byrjið.'],
+['Hún velur úr tveimur verkefnum','always','Þú leggur fram tvo skýra valkosti. Hún velur annan eða hafnar báðum.'],
+['Handjárn eða mjúkar bindingar','restraints','Hún velur tegund bindinga. Prófið hraðlosun og gætið að þægindum og blóðflæði.'],
+['Augnbindi','sensory','Spurðu hvort hún vilji augnbindi. Segðu henni fyrirfram hvaða snertingar eða hjálpartæki koma til greina.'],
+['Þrjár reglur kvöldsins','power','1. Sá sem leiðir velur næsta umslag án þess að sýna innihaldið fyrr en að því kemur. 2. Hinn velur annað af tveimur tilbúnum verkefnum. 3. Eftir hvert verkefni má annar aðilinn bæta við einni nýrri ósk eða breyta reglu.'],
+['Hún fær þrjár óskir','always','Hún nefnir þrjár óskir fyrir kvöldið. Þú velur hvaða óskir þið uppfyllið saman.'],
+['Þú velur tónlist og umhverfi','always','Undirbúðu lýsingu, tónlist og staðsetningu. Hún fær að breyta því sem henni líkar ekki.'],
+['Hún breytir einni reglu','always','Þrjár reglur birtast í leiðbeiningunum. Hún velur reglu 1, 2 eða 3, skrifar nýja útgáfu eða fellir hana niður; hin tvö ákvæðin haldast.'],
+['Hlutverkaleikur – hótelbar','surprise','Undirbúningur: annar er gestur á hótelbar og hinn ókunnugur ferðalangur. Skrifið tvö persónunöfn og þrjár spurningar á spjald. Byrjið á því að kynna ykkur eins og þið hafið aldrei hist; eftir fimm mínútur ákveðið þið framhaldið.'],
+['Leyniverkefni – 3 umslög','surprise','Sá sem skipuleggur skrifar: 1. Veldu klæðnað kvöldsins. 2. Dragðu búnað úr kassanum. 3. Veldu næstu stellingu af tveimur kortum. Opnið eitt umslag í einu.'],
+['Hún stjórnar hluta kvöldsins','power','Ákveðið tímaramma þar sem hún velur verkefni, tónlist og reglur. Þú fylgir þeim sem þú samþykkir.'],
+['Eitt aukaspil','extra','Síðan dregur annað spil úr stokki B og þið veljið hvort heldur. Bæði spilin birtast hér á síðunni.'],['Stellingaval','positions','Farið í gegnum tvær sjálfvaldar stellingar sem birtast neðar, með stuðningi og þægindi í fyrirrúmi.'],['Skipta um stellingu','positions','Tvær stellingar eru valdar fyrir ykkur. Prófið aðeins þá sem báðum finnst þægilegar.'],
+ ['Valdaskipti á miðri leið','power','Sá sem leiðir velur fyrstu tíu mínúturnar, hinn næstu tíu. Hvorugur þarf að útskýra val sitt.'],
+ ['Stigvaxandi styrkur','toys','Byrjið á lægsta styrk tækisins og aukið um eitt stig á tveggja mínútna fresti. Hinn segir „hærra“ eða „lægra“.'],
+ ['Hún les eina reglu upphátt','power','Hún velur eina af reglunum þremur, les hana upphátt og bætir við einni sinni eigin reglu fyrir kvöldið.'],
+ ['Ís og hiti','sensory','Notið ís eða kalt vatn annars staðar og heita olíu hins staðar. Hinn velur hvar.'],
+ ['Tímarammi: 20 mínútur','surprise','Sá sem leiðir setur 20 mínútna klukku. Allt sem gerist í þeim tíma er á hans eða hennar valdi.'],
+ ['Forleikurinn ræður öllu','forleikur','Kvöldið byrjar á forleiksspili úr safninu. Ekkert annað gerist fyrr en báðir segja að upphitun sé lokið.'],
+ ['Hægur forleikur, engin klukka','forleikur','Takið ykkur góðan tíma, engin klukka og engin áætlun. Sá sem stýrir hægir á sér ef hin vill meira.'],
+ ['Andstæður: hægt og hratt','forleikur','Fyrri helmingurinn er hægur og látlaus, seinni helmingurinn snarpari. Hinn segir hvenær skipt er.']];
+const C=[['Leynikassi – þrír pakkar','surprise','Sá sem skipuleggur kvöldið undirbýr þrjá merkta kassa: A með augnbindi og mjúkum borða, B með nuddolíu og nuddtæki, C með hlutverkaspjaldi og búningi. Hinn velur einn kassa, opnar hann og þið fylgið meðfylgjandi verkefnaspjaldi.'],['Anal-þema – val um mismunandi upplifanir','anal','Veljið á milli ytri örvunar, anal-tappa með breiðum stoppara eða annarra sérhannaðra hjálpartækja. Anal-þema þarf ekki að fela í sér samfarir. Hafið nóg sleipiefni, gætið hreinlætis og stöðvið við verki.'],['Prófið nýtt hjálpartæki','toys','Veljið eitt tæki úr búnaðarsafninu, lesið stýringar og hreinsunarleiðbeiningar, prófið stillingar fyrst í hendi og ákveðið hvernig það passar inn í kvöldið.'],['Skynfærakvöld','sensory'],['Nudd og slökun','sensory'],['Hótelstemning','always'],['Geirvörtuklemmur, ef samþykkt','outfits','Hluti af búninga- og undirfataþema. Veljið stillanlegar klemmur og fylgið leiðbeiningum framleiðanda.'],['Fantasíuspjald','surprise','Sá sem undirbýr skrifar þrjár stuttar sögur á spjöld: hótelfundur, grímuball eða leynilegt stefnumót. Hinn velur eina sögu og þið úthlutið hlutverkum og upphafssetningu.'],['Óvæntur staður heima','surprise'],['Uppáhaldsverkefni','always'],['Hún velur hjálpartæki','toys'],['Truth or Dare – þrjár umferðir','surprise','Síðan velur tvö spjöld fyrir ykkur, eitt Truth og eitt Dare, úr safni sem er 33 spjöld. Farið í þrjár umferðir og skiptist á að velja. Ekkert spjald endurtekur sig nema safnið sé uppurið.'],['Stellingakvöld','positions','Síðan úthlutar ykkur tveimur stellingum með leiðbeiningum.'],['Ný stelling sem bæði vilja prófa','positions','Síðan velur tvær stellingar; ákveðið saman hvort þær henta.'],['Tvær stellingar','positions','Tvær stellingar eru valdar sjálfkrafa með stuðningsráðum.'],['Munnmök – kona þiggjandi','oral','Kona er þiggjandi í kvöld. Sjá fræðslu: https://blush.is/post/pikudekur'],['Munnmök – karl þiggjandi','oral','Karl er þiggjandi í kvöld. Sjá fræðslu: https://blush.is/post/sparitott'],['Munnmök – óvænt val','oral','Dragið sérstaklega hvort konan eða karlinn sé þiggjandi og skoðið viðeigandi fræðslutengil.'],['Mjúkar úlnliðsólar','restraints','Notið breiðar bólstraðar ólar með hraðlosun.'],['Bindingar undir rúmi','restraints','Notið sérhannað undirrúmskerfi og prófið hraðlosun áður en byrjað er.'],['Silkibönd','restraints','Notið laus, auðleysanleg bönd og forðist þrýsting á taugar.'],['Titringshjálpartæki','toys','Veljið tæki með auðveldum stjórntökkum og þrífið fyrir og eftir notkun.'],['Nuddstafur','toys','Notið tæki samkvæmt leiðbeiningum framleiðanda.'],['Paratæki','toys','Veljið paratæki sem hentar ykkur og kynnið ykkur notkun þess.'],['Sleipiefni og fylgihlutir','toys','Athugið samhæfni við efni hjálpartækja.'],['Anal-tappi með breiðum stoppara','anal','Notið eingöngu sérhannað tæki með breiðum stoppara, samkvæmt leiðbeiningum framleiðanda.'],['Ytri anal-örvun','anal','Veljið ytra hjálpartæki; engin innsetning nauðsynleg.'],['Fjarstýrður titrari','toys','Veljið hlaðið tæki, prófið stýringar og hafið slökkvihnapp aðgengilegan.'],['Grímuball með leynihlutverkum','kink','Skipuleggjandi útbýr tvo grímubúninga og tvö hlutverkaspjöld. Dragið eitt hvort, lesið hlutverkið og leikið stefnumót í 15 mínútur.'],['Truth or Dare – djörf útgáfa','kink','Þrjár umferðir með valdi af spjöldum: ein spurning um fantasíu, ein áskorun sem snýr að tæki úr safninu og eitt val um hver stýrir. Hafið stöðvunarorð við höndina.'],['Kvikmyndastemning fyrir fullorðna','media','Veljið saman myndskeið fyrir fullorðna; notið það sem innblástur fyrir búning, sviðsmynd eða hlutverk, án þess að þurfa að herma eftir athöfnum.'],
+ ['Leikfangakvöld í þremur hlutum','toys','Þrjú tæki, þrjár lotur. Milli lotna er hlé og hinn velur næsta tæki.'],
+ ['Aðeins tæki, engin snerting','toys','Notið tæki eingöngu og forðist beina snertingu í fyrstu lotu. Sjá hvernig það breytir upplifuninni.'],
+ ['Skynjunarleg aftenging','sensory','Augnbindi, eyrnatappar og létt snerting. Segið fyrirfram hvað kemur til greina.'],
+ ['Klemmur og létt þrýstingur','kink','Aðeins stillanlegar klemmur með skýrum takmörkum; fjarlægið við verki eða litabreytingu.'],
+ ['Leikurinn „hver stýrir næst“','power','Þið draga um stjórn með spili, ekki með orðum. Sá sem vinnur velur verkefni úr stokki A eða B.'],
+ ['Forleikur í tveimur hlutum','forleikur','Fyrri hlutinn er nuddið og nánd, seinni hlutinn er upphitun með tæki. Hlé á milli.'],
+ ['Forleikur við kertaljós','forleikur','Dimpil lýsing, kertaljós og hæg tónlist. Sá sem stýrir ræður hraðanum.'],
+ ['Forleikur án orða','forleikur','Engin orð í tíu mínútur. Aðeins snerting, andardráttur og augnsamband.']];
+let mode=null,drawn=null,chosenPositions=[],wizardSteps=[],currentStep=0;const el=id=>document.getElementById(id);const options=el('options');opts.forEach(([key,title,desc])=>{let lab=document.createElement('label');lab.className='check';lab.innerHTML=`<input type="checkbox" data-key="${key}"><span><strong>${title}</strong><small>${desc}</small></span>`;options.appendChild(lab)});function selected(){return new Set([...options.querySelectorAll('input:checked')].map(x=>x.dataset.key))}function updateMode(m){mode=m;document.querySelectorAll('.mode').forEach(b=>{b.classList.toggle('selected',b.dataset.mode===m);b.setAttribute('aria-pressed',String(b.dataset.mode===m))});options.querySelectorAll('input').forEach(x=>x.checked=configs[m].enabled.includes(x.dataset.key));el('start').disabled=false}document.querySelectorAll('.mode').forEach(b=>b.addEventListener('click',()=>updateMode(b.dataset.mode)));el('start').onclick=()=>{if(!mode)return;el('welcome').classList.add('hidden');el('game').classList.remove('hidden');el('modeDesc').textContent=configs[mode].label+' — '+configs[mode].description;drawn=null;['a','b','c'].forEach(k=>{el(k).textContent='Óopnað spil';el(k+'n').textContent='' });['a','b','c'].forEach(k=>el(k+'detail').textContent='');el('positionGuide').classList.add('hidden');el('plan').classList.add('hidden');el('wizard').classList.add('hidden');chosenPositions=[];el('copy').disabled=true;el('status').textContent='';window.scrollTo(0,0)};el('back').onclick=()=>{el('game').classList.add('hidden');el('welcome').classList.remove('hidden');window.scrollTo(0,0)};function pick(pool,allowed){const valid=pool.map((v,i)=>({...{label:v[0],tag:v[1],detail:v[2]||'',index:i}})).filter(x=>x.tag==='always'||allowed.has(x.tag));return valid[Math.floor(Math.random()*valid.length)]}const positions=[["Missionary", "Klassísk staða á rúmi; púðar geta bætt stuðning."], ["Cowgirl", "Sitjandi eða hálfliggjandi staða; notið stöðugan stuðning."], ["Reverse Cowgirl", "Afbrigði af sitjandi stöðu; gætið að jafnvægi."], ["Spooning", "Hliðarliggjandi staða með púðum fyrir stuðning."], ["Doggy Style", "Hné- og handastuðningur; notið mjúkt undirlag."], ["Lotus", "Sitjandi andspænis; bakið þarf góðan stuðning."], ["Butterfly", "Staða við rúmstokk; hæð og stuðningur skipta máli."], ["Standing", "Standandi staða; hálkulaust gólf og stuðningur."], ["Seated Face-to-Face", "Andspænis í stöðugum stól eða sófa."], ["Side-by-Side", "Hlið við hlið á rúmi."], ["Coital Alignment Technique (CAT)", "Afbrigði af klassískri stöðu; flettið upp heitinu."], ["The Bridge", "Krefst meiri liðleika og stuðnings."], ["The Pretzel", "Hliðarsnúin staða; flettið upp mynd."], ["The Scissors", "Hliðlæg staða; gætið að mjöðmum og hnjám."], ["The Chair", "Sitjandi staða í traustum stól."], ["The Edge of the Bed", "Staða við rúmstokk; aðlagið hæð."], ["The Lazy Dog", "Afbrigði af hnéstöðu með meiri stuðningi."], ["The Seashell", "Sveigjanleg staða; ekki þvinga liðleika."], ["The Amazon", "Sitjandi afbrigði; flettið upp skýringum."], ["The Wheelbarrow", "Krefjandi staða sem krefst jafnvægis."], ["The Tabletop", "Staða við stöðugt yfirborð; athugið burðarþol."], ["The Lap Dance", "Sitjandi staða með stólstuðningi."], ["The Cradle", "Andspænis með stuðningi undir baki."], ["Oral – cunnilingus", "Munnmök þar sem kona er þiggjandi; sjá fræðslutengil."], ["Oral – fellatio", "Munnmök þar sem karl er þiggjandi; sjá fræðslutengil."]];
+function sceneIcon(name){let type=name.includes('stól')||name.includes('Sitjandi')||name.includes('sitjandi')?'chair':name.includes('hlið')||name.includes('Hlið')?'side':name.includes('Standandi')?'stand':'bed';const shapes={chair:'<path d="M45 24v38h50M45 62v23M95 62v23"/><circle cx="70" cy="20" r="9"/><path d="M70 29v25l-18 11m18-11 23 10"/>',side:'<path d="M18 73h105M24 73V46h92v27"/><circle cx="48" cy="41" r="10"/><path d="M59 42h42m-35 0 18 19"/>',stand:'<circle cx="70" cy="20" r="11"/><path d="M70 31v31m0-19-22 14m22-14 22 14M70 62 54 88m16-26 16 26"/>',bed:'<path d="M16 72h112M22 72V49h100v23M22 49V39h35v10"/><circle cx="72" cy="33" r="10"/><path d="M72 43v18m0-12-17 8m17-8 17 8"/>'};return '<svg viewBox="0 0 145 100" role="img" aria-label="Einföld skýring á líkamsstöðu" style="width:100%;max-height:105px" fill="none" stroke="#e5bd7b" stroke-width="3" stroke-linecap="round">'+shapes[type]+'</svg>'} 
+function renderPositions(cards,fixed){
+ const guide=el('positionGuide');guide.classList.remove('hidden');
+ let first,second;
+ if(fixed&&fixed.length===2){first=fixed[0];second=fixed[1];}
+ else{
+  first=null;second=null;
+  if(avoidRepeats){
+   const seen=recent();
+   const ordered=[...positions.keys()].sort((x,y)=>{
+    const ax=(seen.has('p'+x)?1:0)+(unnoted(x)%1),ay=(seen.has('p'+y)?1:0)+(unnoted(y)%1);
+    return ax-ay;
+   });
+   const ok=i=>selected().has('oral')||!positions[i][0].startsWith('Oral –');
+   first=ordered.find(ok);
+   second=ordered.find(i=>i!==first&&ok(i));
+  }
+  if(first==null||second==null){
+   const pool=[...positions.keys()].filter(i=>selected().has('oral')||!positions[i][0].startsWith('Oral –'));
+   first=pool[Math.floor(Math.random()*pool.length)];
+   let guard=0;
+   do{second=pool[Math.floor(Math.random()*pool.length)];guard++}while(second===first&&guard<50);
+  }
+ }
+ chosenPositions=[first,second];
+ el('positionIntro').textContent='Þessar TVÆR stellingar voru valdar sjálfkrafa fyrir kvöldið. Þær eru ekki valfrjáls tillögulisti. Þið getið samt sleppt hvorri sem er eða dregið aftur ef hún hentar ekki.';
+ const host=el('positionChoices');host.replaceChildren();chosenPositions.forEach((idx,n)=>{const [name,detail]=positions[idx];const item=document.createElement('div');item.className='check';const span=document.createElement('span');const title=document.createElement('strong');title.textContent=(n+1)+'. '+name;const small=document.createElement('small');small.textContent=detail;span.append(title,small);const link=document.createElement('a');link.href=name.startsWith('Oral – cunnilingus')?'https://blush.is/post/pikudekur':name.startsWith('Oral – fellatio')?'https://blush.is/post/sparitott':'https://www.google.com/search?tbm=isch&q='+encodeURIComponent(name+' sex position illustration');link.target='_blank';link.rel='noopener noreferrer';link.textContent=name.startsWith('Oral')?'Lesa fræðslugrein á Blush.is ↗':'Skoða skýringarmyndir á netinu ↗';link.style.cssText='display:block;color:#eac98d;margin-top:8px';span.append(link);item.appendChild(document.createRange().createContextualFragment(sceneIcon(name)));item.append(span);host.append(item)});
+}
+const detailed={
+ outfits:'Takið til valinn fatnað og ákveðið hvort hann sé þægilegur. Skiptið um ef hann hentar ekki.',
+ toys:'Búnaðarsafn: (1) titringsstafur – prófið styrkstig í hendi; (2) lítill ytri titrari – kannið hleðslu og stýringar; (3) paratæki – skoðið stillingar saman; (4) nuddstafur – notið utan á líkama samkvæmt leiðbeiningum; (5) stillanlegar klemmur – fylgið notkunarleiðbeiningum; (6) augnbindi – prófið að það losni auðveldlega. Veljið eitt tæki, leggið fram með hreinsiefni og viðeigandi sleipiefni og lesið leiðbeiningar framleiðanda.',
+ surprise:'Sá sem skipuleggur kvöldið undirbýr fyrirfram þrjú lokuð verkefnaspjöld, þrjá litla kassa og tvö hlutverkaspjöld. Á hverju spjaldi stendur nákvæmlega hvað á að taka til, hver byrjar og hvernig verkefninu lýkur. Hinn opnar eitt spjald í einu.',
+ sensory:'Veljið tónlist, lýsingu og eina skynjunarhugmynd. Ef augnbindi er notað skal tryggja að hægt sé að fjarlægja það strax.',
+ restraints:'Ákveðið fyrst hvaða hreyfiskerðing er samþykkt. Veljið mjúkar bindingar eða handjárn með áreiðanlegri hraðlosun; prófið losunina áður en leikur hefst. Forðist háls, þrýsting á taugar og stöður sem takmarka öndun. Fylgist reglulega með tilfinningu og lit í útlimum. Aldrei skilja bundinn einstakling eftir einan.',
+ power:'Skilgreinið Dom/sub-hlutverk fyrir þetta kvöld: hver leggur fram valkosti, hvaða fyrirmæli eru í boði og hvað er utan marka. Veljið stöðvunarorð (t.d. rauður) og athugunarorð (t.d. gulur). Spyrjið reglulega hvort allt sé í lagi. Samþykki má afturkalla hvenær sem er.',
+ clips:'Fáið sérstakt samþykki fyrir klemmum. Skoðið leiðbeiningar framleiðanda og prófið stillingu án þess að valda verulegum þrýstingi. Fjarlægið strax við dofa, litabreytingu eða verki; ekki nota á skemmda húð.',
+ anal:'Staðfestið sérstakt samþykki fyrir anal-þema áður en þið byrjið. Takið til vatns- eða sílikonmiðað sleipiefni sem samrýmist búnaðinum, smokka og aðeins endaþarmshjálpartæki með breiðum stoppara. Byrjið rólega og stöðvið við verki, dofa eða blæðingu. Ekki nota deyfikrem. Skiptið um smokk eða þrífið búnað áður en farið er frá endaþarmi að leggöngum.',
+ positions:'Tvær stellingar eru valdar sjálfkrafa neðar á síðunni. Lesið staðsetningu og stuðningsráð fyrir báðar og aðlagið að þægindum.',
+ oral:'Fræðsla um munnmök: kona sem þiggjandi https://blush.is/post/pikudekur og karl sem þiggjandi https://blush.is/post/sparitott. Hafið þægindi, samskipti og hreinlæti í fyrirrúmi.',
+ always:'Veljið sameiginlega útfærslu sem hentar ykkur báðum.'};
+function describe(card,kind){
+ const title=card.label;
+ if(kind==='a')return card.tag==='positions'?'Veljið þægilegan klæðnað og notið tvær sjálfvaldar stellingar sem birtast neðar á síðunni.':`Takið til eða veljið: ${title.toLowerCase()}. ${card.detail||'Hafið fatnaðinn tilbúinn áður en þið haldið áfram.'}`;
+ if(kind==='b')return card.detail||detailed[card.tag]||detailed.always;
+ return card.detail||detailed[card.tag]||detailed.always;
+}
+/* ---------- TRUTH OR DARE – 30 TILBÚIN SPJÖLD ---------- */
+const TOD_TRUTH=[
+ 'Hvaða fantasíu hefurðu aldrei sagt mér frá – og hvað heldur þú aftur af þér?',
+ 'Hvar á líkamanum finnst þér best að ég taki á þér, og hve fast?',
+ 'Hvaða tæki úr safninu langar þig að ég noti á þig í kvöld?',
+ 'Hvaða verkefni í kvöld hefur þú hugsað um en ekki þorað að segja?',
+ 'Hvenær fannst þér mig einna heitast í dag – og hvað var ég að gera?',
+ 'Hversu lengi viltu að ég haldi áfram án þess að þú fáir að koma?',
+ 'Hvaða stellingu langar þig að prófa sem við höfum aldrei prófað?',
+ 'Viltu að ég stjórni kvöldinu eða að þú stjórnir? Segðu hvers vegna.',
+ 'Hvaða orð eða hljóð frá mér gera þig mest örvaðan eða örvaða?',
+ 'Hvaða mörk vilt þú að við ýtum aðeins að í kvöld?',
+ 'Hvaða leynilegu ósk hefurðu um að ég geri á morgun?',
+ 'Hvað af því sem við höfum gert var það sem þú hugsaðir mest um eftir á?',
+ 'Hversu oft hugsaðir þú um mig í dag – og hvað var í gangi?',
+ 'Hvaða staður á heimilinu vekur mestu löngunina og hvernig myndir þú nota hann?',
+ 'Ef ég fengi að velja allt í kvöld, hvað myndi ég velja vitlaus?',
+ 'Hvaða klæðnað á mér viltu rífa af mér í kvöld?',
+ 'Hvað vilt þú að ég segi þér í eyrað þegar ég er að stjórna?',
+ 'Hvaða tæki í safninu viltu prófa í fyrsta skipti í kvöld?'
+];
+const TOD_DARE=[
+ 'Kysstu mig á hálsinn og niður að bringubeini í 60 sekúndur. Engin orð.',
+ 'Klæddu mig úr einni flík sem þú velur – og láttu mig ekki klæðast aftur fyrr en ég hef gert það sama.',
+ 'Binddu mér fyrir augu og snertu mig á þremur stöðum sem þú velur. Ég á að giska á hvað þú notaðir.',
+ 'Hvísluðu mér í eyra nákvæmlega hvað þú ætlar að gera næst, hægt og í smáatriðum.',
+ 'Notaðu eitt tæki úr safninu á mig í tvær mínútur. Þú stýrir styrkleikanum.',
+ 'Farðu niður fyrir mittið á mér og staldraðu þar í 90 sekúndur.',
+ 'Leyfðu mér að stýra næstu tíu mínútum. Þú mátt ekki tala, aðeins hlýða.',
+ 'Sestu ofan á mér og stjórnaðu taktinum í tvær mínútur án aðstoðar handa.',
+ 'Settu titrara í nærbuxurnar á mér og veldu styrkinn – ég fæ ekki að sjá hann.',
+ 'Farðu úr öllum fötum og bíddu þar til ég segi „núna“. Ég má láta þig bíða.',
+ 'Segðu upphátt eina reglu sem þú vilt setja á kvöldið – og framfylgdu henni.',
+ 'Berðu á mér ís eða kalt vatn þar sem þú vilt og kysstu svo burt.',
+ 'Veldu tæki úr safninu og notaðu það á sjálfa(n) þig á meðan ég horfi á.',
+ 'Þú mátt ekki fá að komast í gegnum þetta fyrr en ég segi að þú hefur gert fyrir það.',
+ 'Ljúktu kvöldinu með Happy ending hjólinu – og framkvæmdu niðurstöðuna í staðinn fyrir að spyrja.'
+];
+function todDeck(){return TOD_TRUTH.map(t=>({type:'Truth',text:t})).concat(TOD_DARE.map(t=>({type:'Dare',text:t})))}
+let todDrawn=[];
+function todStep(){
+ const seen=recent(),deck=todDeck().map((c,i)=>({...c,k:i}));
+ const choose=list=>{const fresh=list.filter(c=>!seen.tod.has(c.k));const pool=fresh.length?fresh:list;return pool[Math.floor(Math.random()*pool.length)]};
+ todDrawn=[choose(deck.filter(c=>c.type==='Truth')),choose(deck.filter(c=>c.type==='Dare'))].filter(Boolean).map(c=>({...c,done:false}));
+}
+function renderTOD(){
+ const host=el('todCards');if(!host)return;
+ host.replaceChildren();
+ if(!todDrawn.length){
+  const p=document.createElement('p');p.className='muted';
+  p.textContent='Tvö spjöld úr 30 eru valin fyrir ykkur: eitt Truth og eitt Dare. Ekkert spjald kemur upp tvisvar svo lengi sem ný eru til.';
+  host.append(p);
+ }
+ todDrawn.forEach((cd,i)=>{
+  const card=document.createElement('article');card.className='todcard';
+  const tag=document.createElement('span');tag.className='todtag';tag.textContent=(i+1)+'. '+cd.type;
+  const txt=document.createElement('p');txt.textContent=cd.text;
+  const pick=document.createElement('button');pick.className='secondary';pick.type='button';
+  pick.textContent=cd.done?'Inni í kvöldinu ✓':'Þetta verður kvöldið';
+  pick.disabled=!!cd.done;
+  pick.onclick=()=>{todDrawn[i].done=true;renderTOD();};
+  card.append(tag,txt,pick);host.append(card);
+ });
+ el('todStatus').textContent=todDrawn.length?('Valin: '+todDrawn.map(c=>c.type).join(' og ')):'';
+}
+/* ---------- INNIHALD SEM EKKI ER SPIL ---------- */
+const SETTAK=[
+ ['Svartur blúndusettur','Svartur blúndutoppur, samstæðar nærbuxur og satínsloppur.'],
+ ['Rautt satín','Rautt satínsloppur, samstæð undirföt og einfaldir gylltir fylgihlutir.'],
+ ['Hvítur glamúr','Hvítur satínkjóll með gylltu belti og háum sokkum.']
+];
+let todPickedSet=null;
+function renderSetChoice(){
+ const host=el('setChoice');if(!host)return;
+ host.replaceChildren();
+ const box=document.createElement('div');box.className='mini-guide';
+ const h=document.createElement('p');
+ h.textContent='Þrjú sett eru í boði. Veljið eitt og pakkið því inn; það er opnað við upphaf kvöldsins.';
+ box.append(h);
+ SETTAK.forEach((set,i)=>{
+  const line=document.createElement('div');line.style.marginBottom='12px';
+  const t=document.createElement('p');t.textContent=(i+1)+'. '+set[0]+' – '+set[1];
+  const b=document.createElement('button');b.className='secondary';b.type='button';
+  b.textContent=(todPickedSet===i)?'Valið ✓':'Velja þetta sett';
+  b.disabled=(todPickedSet===i);
+  b.onclick=()=>{todPickedSet=i;renderSetChoice();renderPlan();buildWizard();el('status').textContent='Settið „'+set[0]+'“ var valið.';};
+  line.append(t,b);box.append(line);
+ });
+ host.append(box);
+}
+function ruleBlock(){
+ const box=document.createElement('div');box.className='mini-guide';
+ const h=document.createElement('p');
+ h.textContent='Reglurnar þrjár sem gilda í kvöld. Hún velur eina þeirra, skrifar nýja útgáfu eða fellir hana niður; hinar tvær halda sér.';
+ box.append(h);
+ editedRules.forEach((r,i)=>{
+  const line=document.createElement('div');line.style.marginBottom='12px';
+  const t=document.createElement('p');t.textContent=r;
+  const wrap=document.createElement('div');wrap.className='toolrow';
+  const b1=document.createElement('button');b1.className='secondary';b1.type='button';
+  b1.textContent='Breyta reglu '+(i+1);
+  b1.onclick=()=>{const n=prompt('Ný útgáfa af reglu '+(i+1)+':',editedRules[i]);if(n!==null){editedRules[i]=n.trim()||('Regla '+(i+1)+' felld niður að hennar vali.');renderWizard();renderPlan()}};
+  const b2=document.createElement('button');b2.className='secondary';b2.type='button';
+  b2.textContent='Fella niður reglu '+(i+1);
+  b2.onclick=()=>{editedRules[i]='Regla '+(i+1)+' felld niður að hennar vali.';renderWizard();renderPlan()};
+  const b3=document.createElement('button');b3.className='tiny';b3.type='button';
+  b3.textContent='Frumtexti';
+  b3.onclick=()=>{editedRules[i]=boldRules[i];renderWizard();renderPlan()};
+  wrap.append(b1,b2,b3);line.append(t,wrap);box.append(line);
+ });
+ return box;
+}
+const boldRules=[
+ 'Regla 1 – Leyndarval: Sá sem leiðir undirbýr þrjú lokuð umslög. Hitt velur eitt án þess að sjá innihaldið fyrst; það er opnað og lesið áður en verkefnið hefst.',
+ 'Regla 2 – Búningaskipti: Veljið tvo ólíka búninga fyrir kvöldið. Eftir fyrsta verkefni skal skipta yfir í hinn búninginn og breyta um hlutverk eða stemningu.',
+ 'Regla 3 – Valdaskipti: Sá sem leiðir velur fyrsta verkefnið. Hitt velur það næsta og má breyta einni reglu eða skipta um verkefni án skýringa.'
+];
+let editedRules=[...boldRules];
+function ruleText(b){return b.label==='Hún breytir einni reglu' ? editedRules.join('\n')+'\nHún velur eina reglu til að breyta eða fella niður.' : describe(b,'b')}
+function renderPlan(){
+ const [a,b,c]=drawn;
+ const items=[
+ ['1. Undirbúið rýmið',`Veljið einkastað, hafið nægan tíma og takið til það sem þarf. ${describe(a,'a')}`],
+ ['1b. Búningurinn'+((drawn[0].label==='Leyndardómsfullur búningur')?' – sett að eigin vali':''),
+   (drawn[0].label==='Leyndardómsfullur búningur'
+     ? ('Þrjú sett í boði: '+SETTAK.map((x,i)=>(i+1)+') '+x[0]+' – '+x[1]).join('  ')+(todPickedSet!=null?'  →  VALIÐ: '+SETTAK[todPickedSet][0]+'.':'  →  Veljið eitt sett.'))
+     : describe(drawn[0],'a'))],
+ ['2. Farið yfir samþykki og mörk','Segið hvort tveggja er í lagi í kvöld, hvað er ekki í boði og hvaða orð merkir að stöðva strax. Hvorugt þarf að útskýra höfnun.'],
+ ['3. Setjið regluna í framkvæmd',`${b.label}: ${ruleText(b)}`],
+ ['3b. Reglurnar þrjár í kvöld',editedRules.map((r,i)=>(i+1)+'. '+r).join('  |  ')],
+ ['4. Framkvæmið þemað',`${c.label}: ${describe(c,'c')}`],
+ ['5. Tvær stellingar kvöldsins',chosenPositions.map((idx,i)=>(i+1)+'. '+positions[idx][0]+': '+positions[idx][1]).join('  |  ')],
+ ['Lokið og farið yfir upplifunina','Takið af búnað, gangið frá og spyrjið hvort öðru hvað virkaði vel og hverju þið viljið breyta næst.']
+ ];
+ const host=el('steps');host.replaceChildren();items.forEach(([heading,body])=>{const li=document.createElement('li');const strong=document.createElement('strong');strong.textContent=heading;const small=document.createElement('small');small.textContent=body;li.append(strong,small);host.append(li)});el('plan').classList.remove('hidden');
+}
+
+const iconSvg=(kind)=>{const common='fill="none" stroke="#e5bd7b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"';const paths={
+ room:'<rect x="13" y="38" width="96" height="39" rx="4"/><path d="M20 38V23h28v15M14 77v9M108 77v9"/>',
+ clothes:'<path d="M44 15L24 27l-11 23 21 8 7-13v43h52V45l7 13 21-8-11-23-20-12-11 14H55z"/>',
+ rules:'<rect x="29" y="12" width="70" height="80" rx="6"/><path d="M44 35h42M44 50h42M44 65h25"/>',
+ kit:'<rect x="19" y="37" width="91" height="53" rx="7"/><path d="M45 37V24h38v13M19 58h91M59 53h12v12H59z"/>',
+ position:'<path d="M12 83h108M23 83V51h86v32M27 51l19-17 21 17M68 51l19-17 19 17"/><circle cx="46" cy="24" r="9"/><circle cx="88" cy="24" r="9"/>',
+ finish:'<path d="M20 52l26 26 64-64"/>'};return `<svg viewBox="0 0 130 100" role="img" aria-label="Skýringartákn" ${common}>${paths[kind]||paths.rules}</svg>`};
+function makeStep(title,body,kind,extra=''){return {title,body,kind,extra}}
+function buildWizard(){
+ const planIt={fore:lastFore};
+ const [a,b,c]=drawn;const active=selected();const steps=[];
+ steps.push(makeStep('Undirbúið kvöldið',`1. Veljið næði og hafið nægan tíma. 2. Takið til fatnað: ${a.label.toLowerCase()}. 3. Leggið fram vatn og það sem þarf fyrir verkefnið.`, 'clothes'));
+ steps.push(makeStep('Ákveðið reglur',`Verkefni úr stokki B: ${b.label}. ${describe(b,'b')} Áður en byrjað er segið hvort annað hvað er í lagi og hvað á að sleppa.`, 'rules'));
+ if(b.label==='Hún breytir einni reglu')steps.push(makeStep('Hún velur hvaða reglu skal breyta','Skoðið reglurnar þrjár hér að ofan. Veljið reglu 1, 2 eða 3. Hún má breyta orðalagi hennar eða fella hana niður; breytingin gildir strax. Engar afleiðingar fylgja því að hafna reglu.','rules'));
+ steps.push(makeStep('Setjið þemað upp',`Verkefni úr stokki C: ${c.label}. ${describe(c,'c')}`, 'kit'));
+ try{
+  const badReps=chosenPositions.filter(i=>recent().has('p'+i)).length;
+  console.log('[Sexvember] Stokkar A/B/C:',a.label+' / '+b.label+' / '+c.label,
+    '| stellingar:',chosenPositions.map(i=>positions[i][0]).join(', '),
+    '| endurtekin spil í stokkum:',[a,b,c].filter(card=>recent().has('c'+card.index)).length,
+    '| endurteknar stellingar:',badReps);
+}catch(e){}
+const tags=[a.tag,b.tag,c.tag];
+ if(tags.includes('restraints')||tags.includes('power'))steps.push(makeStep('Fifty Shades – búnaður og reglur','Veljið fyrirfram skilgreint hlutverk, athugið hraðlosun á bindingum og hafið stöðvunarorð. Forðist bindingar um háls og þrýsting á taugar.','rules'));
+ if(c.label.includes('Geirvörtuklemmur'))steps.push(makeStep('Klemmur – búnaður','Notið stillanlegar klemmur samkvæmt leiðbeiningum framleiðanda og fjarlægið við dofa, verki eða litabreytingu.','kit'));
+ if(tags.includes('toys'))steps.push(makeStep('Hjálpartæki kvöldsins','Veljið eitt tæki úr búnaðarsafninu (32 tæki í boði). Farðu í gegnum það: hlaðið eða sett í samband, prófið styrkstig í hendi og ákveðið fyrirfram hver stýrir og hvenær slökkt er. Hafið hreinsiefni við höndina fyrir og eftir.','kit'));
+ if(planIt&&planIt.fore!=null){
+  const f=FORSPIL[planIt.fore];
+  steps.push(makeStep('Forleikur – spil kvöldsins',f[0]+': '+f[2]+' (spil '+(planIt.fore+1)+' af '+FORSPIL.length+')','room'));
+ }
+ if(tags.includes('oral')){const recipient=c.label.includes('kona')?'kona':c.label.includes('karl')?'karl':Math.random()<0.5?'kona':'karl';const url=recipient==='kona'?'https://blush.is/post/pikudekur':'https://blush.is/post/sparitott';steps.push(makeStep('Munnmök – '+(recipient==='kona'?'kona':'karl')+' þiggjandi','Þetta kvöld er '+(recipient==='kona'?'konan':'karlinn')+' þiggjandi. Fræðslugrein: '+url+'. Hafið þægindi, samskipti og hreinlæti í fyrirrúmi.','kit'));}
+ if(tags.includes('anal'))steps.push(makeStep('Anal – búnaður og undirbúningur','Anal-þema þarf ekki að fela í sér samfarir. Notið nóg sleipiefni, aðeins sérhönnuð tæki með breiðum stoppara og fylgið leiðbeiningum framleiðanda. Hættið við sársauka eða blæðingu.','kit'));
+ if(tags.includes('media'))steps.push(makeStep('Fullorðinsefni – innblástur','Veljið saman myndskeið fyrir fullorðna og takið þaðan hugmynd að búningi, lýsingu eða hlutverkaleik. Ekki gera ráð fyrir að það sem sést á skjánum sé öruggt að endurtaka.','room'));
+ if((c.label||'').toLowerCase().includes('truth or dare')){
+  todStep();
+  if(todDrawn.length)steps.push(makeStep('Truth or Dare – spjöld kvöldsins',todDrawn.map(cd=>cd.type.toUpperCase()+': '+cd.text).join('\n'),'rules'));
+  else steps.push(makeStep('Truth or Dare','Öll 30 spjöldin hafa komið upp á síðustu kvöldum. Hreinsið söguna í valskjánum til að opna safnið á ný.','rules'));
+ }
+ if(tags.includes('kink'))steps.push(makeStep('Kink – leyniverkefni','Leyndarspjaldið: annar les eitt spjald upphátt, hinn velur hvort það er framkvæmt. Truth og Dare spjöldin 30 birtast hér á síðunni þegar þemað er valið.','rules'));
+ chosenPositions.forEach((idx,i)=>{const [name,detail]=positions[idx];steps.push(makeStep(`Stelling ${i+1} af 2 – ${name}`,`Þetta er stelling ${i+1} sem síðan valdi fyrir ykkur. ${detail}`,'position',`Stelling ${i+1}: ${name}`))});
+ if(active.has('happy'))steps.push(makeStep('Happy ending – Klárið verkefnið','Snúið hjólinu til að draga einn af fjórum valkostum. Niðurstaðan birtist á skjánum og hægt er að snúa aftur.','finish'));
+ if((c.label||'').toLowerCase().includes('truth or dare') && todDrawn.length){
+  todDrawn.forEach((cd,i)=>steps.push(makeStep('Truth or Dare '+(i+1)+' – '+cd.type,cd.text+' Hafið stöðvunarorð við höndina; spjaldið er alltaf valfrjálst.','rules')));
+ }
+ if(planIt&&planIt.fore!=null){
+  const f=FORSPIL[planIt.fore];
+  steps.push(makeStep('Forleikur – '+f[0],f[2]+' Takið ykkur góðan tíma; forleikurinn á að vera jafn langur og þið viljið.','room'));
+ }
+ steps.push(makeStep('Ljúkið verkefninu','Takið af hjálpartæki og bindingar, gangið frá og ræðið í stuttu máli hvað virkaði vel og hverju þið viljið breyta næst.','finish'));
+ wizardSteps=steps;currentStep=0;el('wizard').classList.remove('hidden');renderWizard();
+}
+function renderWizard(){const step=wizardSteps[currentStep];if(!step)return;el('stepCount').textContent=`SKREF ${currentStep+1} AF ${wizardSteps.length}`;el('progressBar').style.width=`${100*(currentStep+1)/wizardSteps.length}%`;el('stepTitle').textContent=step.title;const body=el('stepBody');body.replaceChildren();const p=document.createElement('p');p.textContent=step.body;body.append(p);const diagram=document.createElement('div');diagram.className='diagram';diagram.innerHTML=iconSvg(step.kind);const caption=document.createElement('span');caption.textContent=step.kind==='position'?'Einföld skýringarmynd fyrir staðsetningu og stuðning. Lesið textann fyrir nákvæmari leiðbeiningar.':'Sjónræn vísbending um verkefnið í þessu skrefi.';diagram.append(caption);body.append(diagram);/* Reglurnar þrjár birtast áður en valið er gert. */
+if(drawn && drawn[1].label==='Hún breytir einni reglu'){
+ const box=ruleBlock();body.append(box);
+}
+/* Leyndardómsfullur búningur: þrjú sett í boði. */
+if(drawn && drawn[0].label==='Leyndardómsfullur búningur'){
+ const box=document.createElement('div');box.className='mini-guide';
+ const h=document.createElement('p');
+ h.textContent='Þrjú sett eru í boði. Veljið eitt og pakkið því inn; það er opnað við upphaf kvöldsins.';
+ box.append(h);
+ SETTAK.forEach((set,i)=>{
+  const line=document.createElement('div');line.style.marginBottom='12px';
+  const t=document.createElement('p');t.textContent=(i+1)+'. '+set[0]+' – '+set[1];
+  const b=document.createElement('button');b.className='secondary';b.type='button';
+  b.textContent=(todPickedSet===i)?'Valið ✓':'Velja þetta sett';
+  b.disabled=(todPickedSet===i);
+  b.onclick=()=>{todPickedSet=i;renderWizard();renderPlan();el('status').textContent='Settið „'+set[0]+'“ var valið.';};
+  line.append(t,b);box.append(line);
+ });
+ body.append(box);
+}
+if(step.title==='Happy ending – Klárið verkefnið'){const wheelBox=document.createElement('div');wheelBox.className='wheel-box';wheelBox.innerHTML='<div class="wheel-arrow">▼</div><div id="happyWheel" class="happy-wheel"><span>Í munn</span><span>Yfir brjóst</span><span>Yfir rass</span><span>Yfir andlit</span></div><button class="primary" id="spinHappy" type="button">Snúa hjólinu</button><p id="happyResult" aria-live="polite">Ýtið á hnappinn til að draga.</p>';body.append(wheelBox);let spins=0;wheelBox.querySelector('#spinHappy').onclick=()=>{const values=['Í munn','Yfir brjóst','Yfir rass','Yfir andlit'];const n=Math.floor(Math.random()*4);spins++;const angle=360*(spins*5+1)+((4-n)%4)*90-45;const w=wheelBox.querySelector('#happyWheel');w.style.transform='rotate('+angle+'deg)';wheelBox.querySelector('#happyResult').textContent='Hjólið snýst…';setTimeout(()=>{wheelBox.querySelector('#happyResult').textContent='Niðurstaða: '+values[n]},3700)}}
+if(step.extra){const extra=document.createElement('div');extra.className='mini-guide';extra.textContent=step.extra;body.append(extra)}el('prevStep').disabled=currentStep===0;el('nextStep').textContent=currentStep===wizardSteps.length-1?'Byrja aftur ↻':'Næsta skref →'}
+el('prevStep').onclick=()=>{currentStep=Math.max(0,currentStep-1);renderWizard()};el('nextStep').onclick=()=>{currentStep=(currentStep+1)%wizardSteps.length;renderWizard()};
+
+/* ---------- SAGA GEGN ENDURTEKNINGUM ---------- */
+const AVOID='avoidRepeats',LOG='drawLog',LIMIT=12,HKEY='history';
+function loadJSON(k,f){try{const v=localStorage.getItem(k);return v?JSON.parse(v):f}catch(e){return f}}
+function saveJSON(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+let drawLog=loadJSON(LOG,[]).filter(x=>x&&Array.isArray(x.c)&&x.c.length===3&&Array.isArray(x.p));
+let avoidRepeats=loadJSON(AVOID,true)!==false;
+function recent(idx){const out=new Set();drawLog.slice(0,LIMIT).forEach(e=>{e.c.forEach(i=>out.add(i));if(e.p)e.p.forEach(i=>out.add('p'+i))});return out}
+function unnoted(s){return s+Math.floor(Math.random()*1000)/1000}
+/* ---------- FORLEIKUR – 24 SPIL ---------- */
+const FORSPIL=[
+ ['Hálsinn fyrst','forleikur','Byrjið á hálsinum. Kyssið, andið þar og notið varir og tungu í að minnsta kosti fimm mínútur áður en farið er neðar.'],
+ ['Eyrað og hnakkinn','forleikur','Hvísluðu eitthvað djarft í eyrað og kysstu hnakkann. Haldið áfram þar til hinn biður um meira.'],
+ ['Hendurnar bundnar úr leið','forleikur','Annar heldur höndum hins yfir höfðinu eða lætur þær liggja. Allt annað er gert með munni og anda.'],
+ ['Augnbindi og snerting','forleikur','Bindið fyrir augun og snertið á þremur stöðum sem hinn á að giska á. Rétt gisk verður verðlaunað.'],
+ ['Öndun á húðina','forleikur','Andið heitt á húðina á hálsi, bringu og innanverðu læri. Engin snerting fyrr en hinn biður um hana.'],
+ ['Olían og baknuddið','forleikur','Hitið olíu í höndunum og nuddið bak og axlir í tíu mínútur. Hendurnar mega fara neðar þegar hinn leyfir.'],
+ ['Fimm mínútur án orða','forleikur','Notið aðeins hendur, varir og augu í fimm mínútur. Ekkert tal; aðeins öndun.'],
+ ['Sokkaböndin og hælarnir','forleikur','Klæðið hinn í eitthvað úr safninu og takið af því hægt, eitt stykki í einu.'],
+ ['Ís í munninum','forleikur','Hafið ís í munninum og kyssið meðfram hálsi, bringu og niður eftir kviðnum.'],
+ ['Spegillinn','forleikur','Standað fyrir framan spegil og horfið hvort á annað á meðan klæðnaður fer af.'],
+ ['Titringur yfir nærbuxunum','forleikur','Notið titrara utan yfir nærbuxurnar í þrjár mínútur. Styrkurinn er valinn af hinu.'],
+ ['Fjöðrin','forleikur','Notið fjöður eða mjúkan bursta meðfram öllum líkamanum, frá ökkla og upp.'],
+ ['Talningin','forleikur','Hinn á að telja upp að tíu á meðan þú gerir það sem þú vilt. Ef hann mis telur byrjarðu upp á nýtt.'],
+ ['Baðið eða sturta','forleikur','Farið saman í sturtu. Sá sem stendur fyrir aftan velur alla snertingu.'],
+ ['Beltið og handjárnin','forleikur','Aðeins mjúkar ólar með hraðlosun. Prófið losun áður en byrjað er.'],
+ ['Fyrirmæli í eyrað','forleikur','Segðu hinu nákvæmlega hvað hann á að gera næst, í smáatriðum. Hann gerir það eða segir stopp.'],
+ ['Hnéin og innanverð lærin','forleikur','Kyssið innanverðu lærin hægt og staldrið við mörkin. Hinn segir hvenær má lengra.'],
+ ['Bara andi, engin snerting','forleikur','Andið á milli fótanna án snertingar í eina mínútu. Hinn biður um meira ef hann vill.'],
+ ['Tónlistin ræður','forleikur','Veljið lag og fylgið taktinum: hraði og þrýstingur fylgja tónlistinni í tvær mínútur.'],
+ ['Klæðnaðurinn hans hennar','forleikur','Hvort um sig klæðist einhverju úr fötum hins. Síðan fer það af aftur, hægt.'],
+ ['Loforðið','forleikur','Hvort um sig segir eitt loforð fyrir kvöldið. Loforðin eru efnd í lokin.'],
+ ['Nuddið sem verðlaun','forleikur','Sá sem stýrir gefur nudduð 10 mínútur fyrir hverja ósk sem hinn þorir að segja upphátt.'],
+ ['Aðeins varirnar','forleikur','Engar hendur; aðeins varirnar mega snerta. Haldið áfram þar til hinn segir „nóg“.'],
+ ['Upphitun í tíu mínútum','forleikur','Klukka stillt á tíu mínútur. Ekkert lengra fyrr en hún hringir – þá velur hinn hvað gerist næst.']
+];
+let todLog=loadJSON('todLog',[]).filter(x=>typeof x==='number');
+let foreLog=loadJSON('foreLog',[]).filter(x=>typeof x==='number');
+let extraPick=null,extraMain=null;
+function recent(){
+ const cards=new Set(),pos=new Set(),tod=new Set(),fore=new Set();
+ drawLog.slice(0,LIMIT).forEach(e=>{e.c.forEach(i=>cards.add(i));(e.p||[]).forEach(i=>pos.add(i))});
+ todLog.slice(0,TOD_TRUTH.length+TOD_DARE.length).forEach(i=>tod.add(i));
+ foreLog.slice(0,FORSPIL.length).forEach(i=>fore.add(i));
+ return {cards,pos,tod,fore};
+}
+function range(n){return Array.from({length:n},(_,i)=>i)}
+function shuffle(a){const x=a.slice();for(let i=x.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[x[i],x[j]]=[x[j],x[i]]}return x}
+function eligible(list,allow,kind,i){
+ if(kind==='pos')return allow.has('oral')||!list[i][0].startsWith('Oral –');
+ if(kind==='A'){
+   const tag=list[i][1];
+   if(tag==='positions')return allow.has('positions');
+   return tag==='always'||allow.has(tag);
+ }
+ return list[i][1]==='always'||allow.has(list[i][1]);
+}
+function spareIdx(list,allow,kind,seenKey,seen,exclude){
+ const all=range(list.length).filter(i=>eligible(list,allow,kind,i)&&!(exclude||[]).includes(i));
+ if(!all.length)return null;
+ const fresh=all.filter(i=>!seen.has(seenKey+i));
+ const pool=fresh.length?fresh:all;
+ return pool[Math.floor(Math.random()*pool.length)];
+}
+/* Kjarni: metur allt kvöldið (A, B, C og báðar stellingar) í einu lagi.
+   Lægra skor = betra. Nýtt efni gengur alltaf fyrir endurtekningu. */
+let lastFore=null;
+function planDraw(allow){
+ const seen=recent();
+ const forOn=allow.has('forleikur');
+ const forePool=range(FORSPIL.length).filter(i=>true);
+ const freshFore=shuffle(forePool.filter(i=>!seen.fore.has(i)));
+ const forePick=freshFore.length?freshFore[0]:(forePool.length?shuffle(forePool)[0]:null);
+ const cA=range(A.length).filter(i=>eligible(A,allow,'A',i));
+ const cB=range(B.length).filter(i=>eligible(B,allow,'B',i));
+ const cC=range(C.length).filter(i=>eligible(C,allow,'C',i));
+ const cP=range(positions.length).filter(i=>eligible(positions,allow,'pos',i));
+ const seenC=i=>seen.cards.has('c'+i), seenP=i=>seen.pos.has('p'+i);
+ /* stokkur A: klæðnaður fyrst, „positions“-spil eru sérvalkostur */
+ const dA=shuffle(cA).slice(0,8);
+ const dB=shuffle(cB).slice(0,4);
+ const dC=shuffle(cC).slice(0,4);
+ const freshP=shuffle(cP.filter(i=>!seenP(i)));
+ const dP=(freshP.length?freshP:cP.length?shuffle(cP):[]).slice(0,8);
+ const best={a:null,b:null,c:null,pos:[],score:1e9};
+ /* valkostur 1: klæðnaður úr A og tvær stellingar */
+ for(const a of dA){
+  if(A[a][1]==='positions')continue;
+  for(const b of dB)for(const c of dC){
+   const sc=(seenC(a)?4:0)+(seenC(b)?4:0)+(seenC(c)?4:0);
+   if(sc>=best.score)continue;
+   for(let x=0;x<dP.length;x++){
+    for(let y=x+1;y<dP.length;y++){
+     const p1=dP[x],p2=dP[y];
+     const sc2=sc+(seenP(p1)?4:0)+(seenP(p2)?4:0);
+     if(sc2<best.score){best.a=a;best.b=b;best.c=c;best.pos=[p1,p2];best.score=sc2}
+     if(sc2===0)return {a,b,c,pos:[p1,p2]};
+    }
+   }
+  }
+ }
+ /* valkostur 2: ef enginn klæðnaður er í boði, nota „positions“-spilið */
+ const posCard=cA.find(i=>A[i][1]==='positions');
+ if(posCard!=null){
+  for(const b of dB)for(const c of dC){
+   const sc=(seenC(posCard)?4:0)+(seenC(b)?4:0)+(seenC(c)?4:0);
+   if(sc<best.score){best.a=posCard;best.b=b;best.c=c;best.pos=[];best.score=sc}
+  }
+ }
+ /* Eitt aukaspil: ef spilið kemur upp dregst annað spil úr B og notandinn velur. */
+ let auka=null;
+ if(best.b!=null&&B[best.b][0]==='Eitt aukaspil'){
+  const alt=spareIdx(B,allow,'B','c',seen.cards,[best.b]);
+  if(alt!=null)auka=alt;
+ }
+ if(!best||best.a==null||best.b==null||best.c==null){
+  best.a=spareIdx(A,allow,'A','c',seen.cards)??0;
+  best.b=spareIdx(B,allow,'B','c',seen.cards)??0;
+  best.c=spareIdx(C,allow,'C','c',seen.cards)??0;
+  best.pos=[];
+ }
+ best.fore=forOn?forePick:null;
+ best.auka=auka;
+ lastFore=best.fore;
+ if(best.pos.length<2&&A[best.a][1]!=='positions'){
+  const seenP2=seen.pos;
+  const all=range(positions.length).filter(i=>eligible(positions,allow,'pos',i));
+  const fresh=all.filter(i=>!seenP2.has(i));
+  const pool=(fresh.length>=2?fresh:all);
+  const mixed=shuffle(pool);
+  best.pos=[mixed[0],mixed[1]].filter(x=>x!=null);
+  if(best.pos.length<2){
+   const p1=best.pos[0]!=null?best.pos[0]:0;
+   best.pos=[p1,(p1+1)%positions.length];
+  }
+ }
+ return best;
+}
+
+function recordDraw(d){
+ const active=selected();
+ drawLog.unshift({t:Date.now(),m:mode,c:[d[0].index,d[1].index,d[2].index],p:chosenPositions.slice(),a:[...active]});
+ drawLog=drawLog.slice(0,80);saveJSON(LOG,drawLog);
+ todDrawn.forEach(cd=>todLog.unshift(cd.k));
+ todLog=todLog.slice(0,TOD_TRUTH.length+TOD_DARE.length);saveJSON('todLog',todLog);
+ if(lastFore!=null){foreLog.unshift(lastFore);foreLog=foreLog.slice(0,FORSPIL.length);saveJSON('foreLog',foreLog);}
+ renderHistory();
+}
+function fmtDate(t){try{return new Date(t).toLocaleDateString('is-IS',{day:'numeric',month:'short',year:'numeric'})}catch(e){return ''}}
+function renderHistory(){
+ const host=el('history');if(!host)return;
+ const n=drawLog.length;
+ el('showHistory').textContent='Skoða söguna ('+n+(n===1?' kvöld':' kvöld')+')';
+ el('clearHistory').disabled=n===0||!avoidRepeats;
+ host.replaceChildren();
+ drawLog.forEach((e,i)=>{
+  const li=document.createElement('li');
+  const b=document.createElement('strong');b.textContent=(i===0?'Síðasta kvöld · ':'')+fmtDate(e.t);
+  const small=document.createElement('small');
+  small.textContent='A: '+A[e.c[0]][0]+' · B: '+B[e.c[1]][0]+' · C: '+C[e.c[2]][0]+(e.p&&e.p.length?' · Stellingar: '+e.p.map(x=>positions[x][0]).join(', '):'');
+  const bt=document.createElement('button');bt.className='tiny';bt.type='button';bt.textContent='Endurtaka';
+  bt.onclick=()=>{
+    editedRules=[...boldRules];
+    drawn=[{label:A[e.c[0]][0],tag:A[e.c[0]][1],detail:A[e.c[0]][2]||'',index:e.c[0]},{label:B[e.c[1]][0],tag:B[e.c[1]][1],detail:B[e.c[1]][2]||'',index:e.c[1]},{label:C[e.c[2]][0],tag:C[e.c[2]][1],detail:C[e.c[2]][2]||'',index:e.c[2]}];
+    ['a','b','c'].forEach((k,j)=>{el(k).textContent=drawn[j].label;el(k+'n').textContent='#'+(drawn[j].index+1);el(k+'detail').textContent=drawn[j].detail});
+    showCards();renderPositions(drawn,e.p&&e.p.length?e.p.slice():null);renderPlan();buildWizard();
+    el('copy').disabled=false;el('printPlan').disabled=false;
+    el('status').textContent='Kvöldið frá '+fmtDate(e.t)+' var endurtekið.';
+    el('game').scrollIntoView({behavior:'smooth',block:'start'});
+  };
+  li.append(b,small,bt);host.append(li);
+ });
+ if(drawLog.length){const bad=drawLog.slice(0,LIMIT).reduce((m,e)=>Math.max(m,e.t),0);el('undoNote').textContent=' '+(LIMIT+' kvöld verða inni til '+fmtDate(bad)+'.');}else{el('undoNote').textContent='';}
+ el('historyFoot').classList.toggle('hidden',n===0);
+}
+function clearLog(msg){
+ const n=drawLog.length;drawLog=[];saveJSON(LOG,drawLog);todLog=[];saveJSON('todLog',todLog);foreLog=[];saveJSON('foreLog',foreLog);renderHistory();
+ el('undoNote').textContent='';el('history').classList.add('hidden');
+ el('status').textContent=msg||('Sagan var hreinsuð ('+n+' kvöld). Öll spil geta komið upp aftur.');
+}
+if(el('avoidToggle'))el('avoidToggle').checked=avoidRepeats;
+renderHistory();
+
+function showCards(){['a','b','c'].forEach((key,i)=>{el(key).textContent=drawn[i].label;el(key+'n').textContent='#'+(drawn[i].index+1);el(key+'detail').textContent=drawn[i].detail})}
+function renderExtra(){
+ const host=el('extraChoice');if(!host)return;
+ host.replaceChildren();
+ if(!extraMain){host.classList.add('hidden');return}
+ host.classList.remove('hidden');
+ const mk2=(title,body,pickIt,chosen)=>{
+  const card=document.createElement('article');card.className='todcard';
+  const tag=document.createElement('span');tag.className='todtag';tag.textContent=title;
+  const p=document.createElement('p');p.textContent=body;
+  const b=document.createElement('button');b.className='secondary';b.type='button';
+  b.textContent=chosen?'Valið ✓':'Velja þetta';
+  b.disabled=!!chosen;
+  b.onclick=()=>pickIt();
+  card.append(tag,p,b);return card;
+ };
+ host.append(mk2('Aukaspilið – val 1',extraMain[0]+': '+(extraMain[2]||''),()=>{
+  drawn[1]={label:extraMain[0],tag:extraMain[1],detail:extraMain[2]||'',index:extraMain.index,kind:'b'};
+  extraMain=null;showCards();renderPlan();buildWizard();renderExtra();
+  el('status').textContent='Aukaspilið var haldið.';
+ },false));
+ if(extraPick)host.append(mk2('Aukaspilið – val 2 (nýtt spil)',extraPick[0]+': '+(extraPick[2]||''),()=>{
+  drawn[1]={label:extraPick[0],tag:extraPick[1],detail:extraPick[2]||'',index:extraPick.index,kind:'b'};
+  extraMain=null;extraPick=null;showCards();renderPlan();buildWizard();renderExtra();
+  el('status').textContent='Nýja spilið var dregið.';
+ },false));
+}
+function asCard(pool,i,kind){return i==null?null:{label:pool[i][0],tag:pool[i][1],detail:pool[i][2]||'',index:i,kind}}
+/* Velur spilin þrjú ásamt tveimur stellingum. Allt er metið saman svo
+   hver dráttur verði nýr ef hægt er – en nýtt efni gengur alltaf fyrir
+   því að forðast endurtekningu. */
+el('draw').onclick=()=>{editedRules=[...boldRules];const allow=selected();
+ const planIt=planDraw(allow);
+ drawn=[asCard(A,planIt.a,'a'),asCard(B,planIt.b,'b'),asCard(C,planIt.c,'c')];
+ showCards();renderPositions(drawn,planIt.pos.length===2?planIt.pos:null);
+ todPickedSet=null;todDrawn=[];renderTOD();
+ const aukaSá=B[planIt.b][0]==='Eitt aukaspil'?planIt.b:null;
+ extraMain=(aukaSá!=null)?{label:B[aukaSá][0],tag:B[aukaSá][1],detail:B[aukaSá][2]||'',index:aukaSá}:null;
+ extraPick=(planIt.auka!=null)?{label:B[planIt.auka][0],tag:B[planIt.auka][1],detail:B[planIt.auka][2]||'',index:planIt.auka}:null;
+ renderExtra();renderPlan();buildWizard();
+ el('copy').disabled=false;el('printPlan').disabled=false;
+ recordDraw(drawn);
+ const seenNow=recent();const repeated=[drawn[0],drawn[1],drawn[2]].filter(x=>seenNow.cards.has('c'+x.index)||(x.kind==='a'&&x.tag==='positions'&&seenNow.pos.has('p'+x.index))).length;
+ let msg='Þrjú spil hafa verið dregin.';
+ if(avoidRepeats)msg+=(repeated===0?' Ekkert þeirra hefur komið upp á síðustu '+LIMIT+' kvöldum.':' '+repeated+' spil koma úr sögunni, því ekki var hægt að forða þeim að öllu leyti.');
+ else msg+=' Endurtekningar eru leyfðar í stillingunum.';
+ el('status').textContent=msg;};el('printPlan').onclick=()=>{
+ if(!el('plan').classList.contains('hidden'))el('plan').open=true;
+ window.print();
+};
+el('showHistory').onclick=()=>{const h=el('history');h.classList.toggle('hidden');el('showHistory').textContent=(h.classList.contains('hidden')?'Skoða söguna (':'Fela söguna (')+drawLog.length+' kvöld)';};
+el('clearHistory').onclick=()=>{if(confirm('Hreinsa alla söguna? Þá geta öll spil komið upp aftur.'))clearLog();};
+el('undoLast').onclick=()=>{if(!drawLog.length)return;const t=drawLog.shift();saveJSON(LOG,drawLog);renderHistory();el('status').textContent='Kvöldið frá '+fmtDate(t.t)+' var afturkallað.';};
+if(el('avoidToggle'))el('avoidToggle').onchange=e=>{avoidRepeats=e.target.checked;saveJSON(AVOID,avoidRepeats);renderHistory();el('clearHistory').disabled=drawLog.length===0||!avoidRepeats;el('status').textContent=avoidRepeats?'Endurtekningar verða forðaðar.':'Endurtekningar eru leyfðar.';};
+el('copy').onclick=async()=>{if(!drawn)return;const str='SEXVEMBER — '+configs[mode].label+'\n'+fmtDate(Date.now())+'\n'+['A – Klæðnaður','B – Reglur','C – Þema'].map((k,i)=>k+': '+drawn[i].label+(drawn[i].detail?' — '+drawn[i].detail:'')).join('\n')+'\n\nSKREF FYRIR SKREF\n'+[...el('steps').querySelectorAll('li')].map(x=>x.innerText).join('\n')+(el('positionGuide').classList.contains('hidden')?'':'\nValdar stellingar:\n'+chosenPositions.map(i=>positions[i][0]+': '+positions[i][1]).join('\n'));try{await navigator.clipboard.writeText(str);el('status').textContent='Verkefnið var afritað.'}catch(e){const ta=document.createElement('textarea');ta.value=str;document.body.appendChild(ta);ta.select();try{document.execCommand('copy');el('status').textContent='Verkefnið var afritað.'}catch(e2){el('status').textContent=str}ta.remove()}};
+</script></body></html>
